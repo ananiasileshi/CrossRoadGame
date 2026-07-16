@@ -2,7 +2,9 @@
 
 A browser-based 3D crossing game built with plain HTML, CSS, JavaScript, and Three.js.
 
-Live demo: https://ananiasileshi.github.io/CrossRoadGame/
+## Live Demo
+
+[Play the game here](https://ananiasileshi.github.io/CrossRoadGame/)
 
 ## How to run
 
