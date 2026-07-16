@@ -2,6 +2,8 @@
 
 A browser-based 3D crossing game built with plain HTML, CSS, JavaScript, and Three.js.
 
+Live demo: https://ananiasileshi.github.io/CrossRoadGame/
+
 ## How to run
 
 Open `index.html` in a browser. No build step or install is required.
