@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Chicken Cross 3D</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <div id="counter">0</div>
+      <div class="hud-row">
+        <span class="hud-pill">🏆 <span id="best">0</span></span>
+        <span class="hud-pill">🪙 <span id="coins">0</span></span>
+        <button id="mute" class="hud-pill" title="Mute (M)">🔊</button>
+      </div>
+    </div>
+
+    <div id="controlls">
+      <div>
+        <button id="forward" aria-label="Move forward">
+          <svg width="30" height="30" viewBox="0 0 10 10">
+            <g transform="rotate(0, 5,5)"><path d="M5,4 L7,6 L3,6 L5,4" /></g>
+          </svg>
+        </button>
+        <button id="left" aria-label="Move left">
+          <svg width="30" height="30" viewBox="0 0 10 10">
+            <g transform="rotate(-90, 5,5)"><path d="M5,4 L7,6 L3,6 L5,4" /></g>
+          </svg>
+        </button>
+        <button id="backward" aria-label="Move backward">
+          <svg width="30" height="30" viewBox="0 0 10 10">
+            <g transform="rotate(180, 5,5)"><path d="M5,4 L7,6 L3,6 L5,4" /></g>
+          </svg>
+        </button>
+        <button id="right" aria-label="Move right">
+          <svg width="30" height="30" viewBox="0 0 10 10">
+            <g transform="rotate(90, 5,5)"><path d="M5,4 L7,6 L3,6 L5,4" /></g>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="start" class="overlay">
+      <div class="panel">
+        <h1>🐔 Chicken Cross 3D</h1>
+        <p>Dodge cars, trucks and trains.<br />Ride the logs — don't touch the water!</p>
+        <p class="hint">Arrows / WASD to move · Swipe or tap on mobile<br />P to pause · M to mute</p>
+        <button id="play" class="big-btn">Play</button>
+      </div>
+    </div>
+
+    <div id="end" class="overlay hidden">
+      <div class="panel">
+        <h1>Game Over</h1>
+        <p id="new-best" class="new-best hidden">★ New best! ★</p>
+        <p id="final-score">Score 0</p>
+        <p id="final-best">Best 0</p>
+        <button id="retry" class="big-btn">Retry</button>
+      </div>
+    </div>
+
+    <div id="paused" class="overlay hidden">
+      <div class="panel">
+        <h1>Paused</h1>
+        <p class="hint">Press P or Esc to resume</p>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
